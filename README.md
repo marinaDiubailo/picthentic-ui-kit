@@ -3,10 +3,10 @@
 - Install dependencies:
 
   ```bash
-  npm i
+  npm i picthentic-ui-kit
   ```
 
-- Run storybook:
+- Import css files:
   ```bash
-  npm dev
+  import "picthentic-ui-kit/dist/styles.css"
   ```
