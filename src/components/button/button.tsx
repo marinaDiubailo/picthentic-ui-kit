@@ -2,9 +2,9 @@ import { ComponentPropsWithoutRef, ElementType, ForwardedRef, forwardRef } from 
 
 import { clsx } from 'clsx'
 
-import s from './Button.module.scss'
+import s from './button.module.scss'
 
-type ButtonVariant = 'link' | 'outline' | 'primary' | 'secondary'
+type ButtonVariant = 'outlined' | 'primary' | 'secondary' | 'text'
 type InferType<T> = T extends ElementType<infer U> ? U : never
 
 type Props<T extends ElementType = 'button'> = {
