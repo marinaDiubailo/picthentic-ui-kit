@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Button } from './'
+import { Button } from './Button'
 
 const meta = {
   argTypes: {
     onClick: { action: 'clicked' },
     variant: {
       control: { type: 'radio' },
-      options: ['primary', 'secondary', 'tertiary', 'link'],
+      options: ['primary', 'secondary', 'outline', 'link'],
     },
   },
   component: Button,
@@ -33,11 +33,11 @@ export const Secondary: Story = {
     variant: 'secondary',
   },
 }
-export const Tertiary: Story = {
+export const Outline: Story = {
   args: {
-    children: 'Tertiary Button',
+    children: 'Outline Button',
     disabled: false,
-    variant: 'tertiary',
+    variant: 'outline',
   },
 }
 export const Link: Story = {
